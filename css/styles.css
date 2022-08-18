@@ -44,6 +44,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+img {
+  display: block;
+}
+/* border-bottom: 1px solid #ececec; */
+header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-header-color);
+}
 .list {
   list-style: none;
   padding: 0;
@@ -70,10 +79,7 @@ body {
 .down .accent {
   color: var(--primary-white-color);
 }
-img {
-  display: block;
-}
-/* site-nav */
+/*------------------------------------- site-nav -----------------------------------*/
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -123,13 +129,7 @@ img {
 .contact-info .item + .item {
   margin-left: 50px;
 }
-/* border-bottom: 1px solid #ececec; */
-header {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--border-header-color);
-}
-/* hero */
+/*----------------------------------------hero--------------------------------------*/
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -148,7 +148,7 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-/* section */
+/*--------------------------------------section-------------------------------------*/
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -167,7 +167,7 @@ header {
   padding-top: 0;
   padding-bottom: 94px;
 }
-/* features */
+/*--------------------------------------features------------------------------------*/
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -203,7 +203,7 @@ header {
 .presentation .item:nth-child(3n) {
   margin-right: 0;
 }
-/* team */
+/*---------------------------------------team---------------------------------------*/
 .team-list .team {
   color: var(--title-text-color);
   font-weight: 500;
@@ -248,7 +248,7 @@ header {
 .team-list .item:nth-child(4n) {
   margin-right: 0;
 }
-/* footer */
+/*--------------------------------------footer--------------------------------------*/
 .site-footer .map-link {
   color: var(--primary-white-color);
   text-decoration: none;
@@ -285,7 +285,7 @@ header {
 .site-footer {
   margin-top: 20px;
 }
-/* button */
+/*--------------------------------------button--------------------------------------*/
 /* text-align: center; в кнопках за умовчанням*/
 button {
   font-family: inherit;
@@ -306,7 +306,7 @@ button {
   padding: 10px 32px;
   min-width: 216px;
 }
-/* portfolio */
+/*-------------------------------------portfolio-------------------------------------*/
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
