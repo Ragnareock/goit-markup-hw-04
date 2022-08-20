@@ -79,7 +79,7 @@ header {
 .down .accent {
   color: var(--primary-white-color);
 }
-/*------------------------------------- site-nav -----------------------------------*/
+/*------------------------------------  site-nav  ----------------------------------*/
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -129,7 +129,7 @@ header {
 .contact-info .item + .item {
   margin-left: 50px;
 }
-/*----------------------------------------hero--------------------------------------*/
+/*--------------------------------------  hero  ------------------------------------*/
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -147,8 +147,14 @@ header {
 
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-/*--------------------------------------section-------------------------------------*/
+/*------------------------------------  section  -----------------------------------*/
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -165,9 +171,9 @@ header {
 }
 .section.make {
   padding-top: 0;
-  padding-bottom: 94px;
+  padding-bottom: 99px;
 }
-/*--------------------------------------features------------------------------------*/
+/*------------------------------------  features  ----------------------------------*/
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -203,7 +209,17 @@ header {
 .presentation .item:nth-child(3n) {
   margin-right: 0;
 }
-/*---------------------------------------team---------------------------------------*/
+.feature-soc-list {
+  width: 270px;
+  height: 120px;
+  background-color: var(--primary-bg-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+/*-------------------------------------  team  -------------------------------------*/
 .team-list .team {
   color: var(--title-text-color);
   font-weight: 500;
@@ -230,6 +246,7 @@ header {
 
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
 }
 .section.team {
   background-color: var(--primary-bg-color);
@@ -248,7 +265,74 @@ header {
 .team-list .item:nth-child(4n) {
   margin-right: 0;
 }
-/*--------------------------------------footer--------------------------------------*/
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-soc-icon {
+  fill: #afb1b8;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.team-soc-link:hover .team-soc-icon {
+  fill: var(--primary-white-color);
+}
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--primary-white-color);
+}
+/*------------------------------------  client  ------------------------------------*/
+.section.client {
+  padding-top: 89px;
+  padding-bottom: 94px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.client-soc-icon {
+  fill: #afb1b8;
+}
+.client-link:hover,
+.client-link:focus {
+  background-color: var(--accent-color);
+}
+.client-link:hover .team-soc-icon {
+  fill: var(--primary-white-color);
+}
+.client-link:focus .team-soc-icon {
+  fill: var(--primary-white-color);
+}
+/*------------------------------------  footer  ------------------------------------*/
 .site-footer .map-link {
   color: var(--primary-white-color);
   text-decoration: none;
@@ -285,7 +369,7 @@ header {
 .site-footer {
   margin-top: 20px;
 }
-/*--------------------------------------button--------------------------------------*/
+/*------------------------------------  button  ------------------------------------*/
 /* text-align: center; в кнопках за умовчанням*/
 button {
   font-family: inherit;
@@ -306,7 +390,7 @@ button {
   padding: 10px 32px;
   min-width: 216px;
 }
-/*-------------------------------------portfolio-------------------------------------*/
+/*-----------------------------------  portfolio  -----------------------------------*/
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
