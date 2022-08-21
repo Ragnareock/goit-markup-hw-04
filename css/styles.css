@@ -148,6 +148,11 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
 
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -171,7 +176,6 @@ header {
 }
 .section.make {
   padding-top: 0;
-  padding-bottom: 99px;
 }
 /*------------------------------------  features  ----------------------------------*/
 .feature-list .title {
@@ -293,10 +297,6 @@ header {
   fill: var(--primary-white-color);
 }
 /*------------------------------------  client  ------------------------------------*/
-.section.client {
-  padding-top: 89px;
-  padding-bottom: 94px;
-}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -324,13 +324,13 @@ header {
 }
 .client-link:hover,
 .client-link:focus {
-  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
-.client-link:hover .team-soc-icon {
-  fill: var(--primary-white-color);
+.client-link:hover .client-soc-icon {
+  fill: var(--accent-color);
 }
-.client-link:focus .team-soc-icon {
-  fill: var(--primary-white-color);
+.client-link:focus .client-soc-icon {
+  fill: var(--accent-color);
 }
 /*------------------------------------  footer  ------------------------------------*/
 .site-footer .map-link {
@@ -339,7 +339,6 @@ header {
   font-style: normal;
 
   display: block;
-  margin-right: 939px;
 }
 .site-footer .map-link:hover,
 .site-footer .map-link:focus {
@@ -351,7 +350,6 @@ header {
   font-style: normal;
 
   display: block;
-  margin-right: 939px;
 }
 .site-footer .link:hover,
 .site-footer .link:focus {
@@ -368,6 +366,47 @@ header {
 }
 .site-footer {
   margin-top: 20px;
+}
+.section-title-invait {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.invait-list {
+  display: flex;
+  gap: 10px;
+}
+.invait-soc-icon {
+  fill: var(--primary-white-color);
+}
+.invait-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invait-soc-link:hover,
+.invait-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.invait-container {
+  display: flex;
+  align-items: baseline;
+}
+.page-invait {
+  margin-left: 70px;
 }
 /*------------------------------------  button  ------------------------------------*/
 /* text-align: center; в кнопках за умовчанням*/
